@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.airquality.federated.MainActivity">
+
+    <TextView
+        android:id="@+id/Text"
+        android:textSize="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="6dp"
+        android:text="On-Device Training" />
+
+    <EditText
+        android:id="@+id/epochs"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/Text"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="n_Epochs"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/epochs"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Run" />
+
+    <TextView
+        android:id="@+id/W"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/button"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="85dp"
+        android:text="W"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="85dp"
+        android:layout_toEndOf="@id/W"
+        android:text="B"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/Fed"
+        android:textSize="24dp"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/W"
+        android:layout_marginTop="128dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="6dp"
+        android:text="Federated Server Test" />
+
+    <Button
+        android:id="@+id/uploadWeights"
+        android:layout_below="@id/Fed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="24dp"
+        android:text="Upload Weights" />
+
+    <Button
+        android:id="@+id/getModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uploadWeights"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:text="getModel" />
+
+</RelativeLayout>
