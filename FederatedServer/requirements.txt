@@ -1,0 +1,9 @@
+flask
+gunicorn
+firebase-admin
+numpy
+datetime
+APScheduler==3.0.0
+tensorflow
+python-firebase
+scikit-learn
