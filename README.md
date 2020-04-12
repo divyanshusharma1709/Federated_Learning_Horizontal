@@ -1,7 +1,7 @@
 # Federated_Learning_Horizontal
 An Implementation of the Federated Averaging Algorithm as described in the Paper - [Communication-Efficient Learning of Deep Networks from Decentralized Data by H. Brendan McMahan, Eider Moore, Daniel Ramage, Seth Hampson, Blaise Agüera y Arcas](https://arxiv.org/abs/1602.05629) 
 
-![]()
+![] (Fed_Learning.gif)
 
 ## Description
 This repository contains code to implement the Federated Averaging Algorithm as described in in the Paper - Communication-Efficient Learning of Deep Networks from Decentralized Data.
